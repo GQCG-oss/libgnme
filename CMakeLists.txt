@@ -42,6 +42,7 @@ set(CMAKE_MODULE_PATH "${LIBGNME_SOURCE_DIR}/cmake")
 
 add_subdirectory(libgnme)
 add_subdirectory(test)
+add_subdirectory(example)
 
 # Setup Doxygen
 if(DOXYGEN_FOUND)
