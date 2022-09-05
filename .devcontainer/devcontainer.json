@@ -7,7 +7,10 @@
 	"context": "..",
 
 	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-	"image": "ghcr.io/gqcg-oss/libgnme/dev:main"
+	"image": "ghcr.io/gqcg-oss/libgnme/dev:main",
+
+	// Install extensions
+	"extensions": ["ms-vscode.cpptools-extension-pack"],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
