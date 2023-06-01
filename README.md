@@ -19,9 +19,34 @@ The libGNME package requires a set of standard libraries:
 3. CMake (version 3.12 or higher)
 
 ### Compilation
-The configure script can be run depending on the choice of compiler:
-1. <tt>./configure [intel/gcc/pgi]</tt>
-2. <tt>cd build</tt>
-3. <tt>make install</tt>
 
-Following installation, the test suite can be executed from the <tt>build/</tt> directory by running <tt>ctest</tt>.
+```bash
+mkdir build && cd build
+cmake ..
+make -j2
+```
+
+### Running the example
+
+```bash
+cd build/example
+cp overlap ../../example
+cd ../../example
+./overlap
+```
+
+### Changing the example
+
+In build
+
+```bash
+make
+```
+
+In the `example` folder
+
+```bash
+cp ../build/example/overlap .
+./overlap
+```
+
