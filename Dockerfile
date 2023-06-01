@@ -29,7 +29,7 @@ RUN wget \
 RUN conda --version
 
 # install required conda packages
-RUN conda install -c conda-forge cmake mkl intel-openmp doxygen
+RUN conda install -c conda-forge cmake mkl intel-openmp doxygen armadillo
 
 RUN ldconfig
 
